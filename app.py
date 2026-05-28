@@ -394,18 +394,18 @@ if process_btn:
     #     st.session_state.retrieval_chain = None
     #     st.error(f"Error: {str(e)}")
     except Exception:
-
+    
         st.session_state.youtube_input = ""
         st.session_state.retrieval_chain = None
-
+    
         st.toast(
             "Failed to process video",
             icon="❌"
         )
-
+    
         st.error(
             "Something went wrong, Please try another YouTube video."
-    )
+        )
 
 # =========================
 # Chat Section
