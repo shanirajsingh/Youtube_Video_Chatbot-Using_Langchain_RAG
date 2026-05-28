@@ -12,7 +12,7 @@ faiss-cpu>=1.8.0
 sentence-transformers>=3.0.0
 transformers>=4.44.0
 huggingface-hub>=0.24.0
-torch>=2.2.0
+torch==2.2.2
 
 youtube-transcript-api>=1.0.0
 python-dotenv>=1.0.1
