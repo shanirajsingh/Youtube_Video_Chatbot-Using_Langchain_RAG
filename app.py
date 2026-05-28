@@ -210,8 +210,9 @@ if process_btn:
         @st.cache_resource
         def load_embeddings():
             return HuggingFaceEmbeddings(
-            model_name="sentence-transformers/all-MiniLM-L6-v2"
-        )
+                model_name="sentence-transformers/all-MiniLM-L6-v2"
+            )
+        
         embeddings = load_embeddings()
 
         # =========================
@@ -387,13 +388,14 @@ if process_btn:
 
         st.error(
             "Transcript is disabled for this video"
-    )
+        )
 
     # except Exception as e:
     #     st.session_state.youtube_input = ""
     #     st.session_state.retrieval_chain = None
     #     st.error(f"Error: {str(e)}")
-    except Exception:
+
+    except Exception as e:
     
         st.session_state.youtube_input = ""
         st.session_state.retrieval_chain = None
@@ -403,9 +405,9 @@ if process_btn:
             icon="❌"
         )
     
-        st.error(
-            "Something went wrong, Please try another YouTube video."
-        )
+        st.error(f"Error: {str(e)}")
+    
+        st.exception(e)
 
 # =========================
 # Chat Section
