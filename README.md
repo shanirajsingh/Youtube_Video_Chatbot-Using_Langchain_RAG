@@ -87,3 +87,5 @@ youtube-video-chatbot/
 ├── requirements.txt
 ├── .env
 └── README.md
+
+![Project Screenshot](https://github.com/shanirajsingh/Youtube_Video_Chatbot-Using_Langchain_RAG/blob/main/YT_chatbot_pic1.png?raw=true)
