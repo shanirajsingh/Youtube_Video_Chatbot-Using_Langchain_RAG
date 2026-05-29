@@ -4,9 +4,9 @@ An AI-powered YouTube Video Chatbot built with Streamlit, LangChain, Groq, and H
 
 - Extract YouTube video transcripts
 - Ask questions about videos
-- Generate AI-suggested questions
+- Automatic Generate AI-suggested questions related to video
 - Summarize video content
-- Chat with videos using Retrieval-Augmented Generation (RAG)
+- Chat with video using chat prompt
 
 ---
 
